@@ -220,7 +220,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Günel Axtarışda</h1>
+      <h1>Tural Alışov Ürəkdi</h1>
       <div className="searchingvalue">{Buttons}</div>
 
       {onefield && (
