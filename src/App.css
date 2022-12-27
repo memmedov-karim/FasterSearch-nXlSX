@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+button{
+  cursor: pointer;
+  /* height: 30px; */
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+form{
+  margin-top: 30px;
+}
+form input{
+  width: 20%;
+  height: 30px;
+  outline: none;
+  /* border-radius: 3px; */
+  padding: 2px;
+}
+
+.general{
+  margin-top: 20px;
+ 
+  /* width: 95%; */
+  /* border: 1px solid black; */
+  min-height: 50px;
+  padding: 10px;
+  text-align: start;
+}
+.user{
+  /* width: 100%; */
+
+  border-top: 2px solid green;
+  border-right: 3px solid green;
+  border-bottom: 2px solid red;
+  border-left: 3px solid red;
+  min-height: 20px;
+  margin-bottom: 1px;
+  background-color: black;
+  /* overflow: hidden; */
+}
+strong{
+  margin-left: 2px;
+  color: green;
+}
+
+pre{
+  color: #F0F8FF;
+}
+i{
+  color:red
+}
