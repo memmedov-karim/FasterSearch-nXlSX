@@ -3,6 +3,44 @@ import SchoolCodes from './schoolcodesxl.json'
 import "./App.css";
 import React from "react";
 function App() {
+  const [numberOfGirl,setnumberOfGirl] = React.useState(null);
+  const [numberOfBoy,setnumberOfBoy] = React.useState(null);
+  const FindNumOfGirl = (data) => {
+    let count = 0;
+    for(let i of data){
+      if(i.ataadi.split(" ")[1] === "qızı"){
+        count+=1
+      }
+
+    }
+    setnumberOfGirl(count);
+  }
+  const FindNumOfBoy = (data) => {
+    let count = 0;
+    for(let i of data){
+      if(i.ataadi.split(" ")[1] === "oğlu"){
+        count+=1
+      }
+
+    }
+    setnumberOfBoy(count);
+  }
+  // FindNumOfGirl(Data["Ümumi"]);
+  const ShowGirl = () => {
+    FindNumOfGirl(Data["Ümumi"])
+    setTimeout(()=>{
+      setnumberOfGirl(null)
+
+    },2000)
+    
+  }
+  const ShowBoy = () => {
+    FindNumOfBoy(Data["Ümumi"])
+    setTimeout(()=>{
+      setnumberOfBoy(null)
+
+    },2000)
+  }
   
   const ShowSchoolCode = (school_name) => {
     for(let i of SchoolCodes){
@@ -222,6 +260,7 @@ function App() {
 
   return (
     <div className="App">
+    <button style={{backgroundColor:"white",marginTop:"10px"}} onClick={ShowBoy}>{numberOfBoy?numberOfBoy:"Oğlan"}</button><button style={{backgroundColor:"white" ,marginTop:"10px"}} onClick={ShowGirl}>{numberOfGirl?numberOfGirl:"Qız"}</button>
       <h1>Tural Alışov Ürəkdi</h1>
       <div className="searchingvalue">{Buttons}</div>
 
