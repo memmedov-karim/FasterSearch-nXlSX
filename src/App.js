@@ -160,7 +160,7 @@ function App() {
           <i>{user["sinif"]}</i>|<strong>Bölmə:</strong>
           <i>{user["tedris dili"]}</i>|<strong>Fənn:</strong>
           <i>{user["istiqamet"].split(" ")[0]}</i>|<strong>Məktəb:</strong>
-          <i>{ShowSchoolCode(user["mekteb"])}</i>|
+          <i>{ShowSchoolCode(user["mekteb"])}</i>|<strong>Otaq:</strong>
           {<i>{user["otaq"]}</i>}<span style={{color:"green"}}>|</span>Yer:
           <i>{user["yer"]}</i><span style={{color:"green"}}>|</span>
           
