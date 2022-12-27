@@ -161,6 +161,8 @@ function App() {
           <i>{user["tedris dili"]}</i>|<strong>Fənn:</strong>
           <i>{user["istiqamet"]}</i>|<strong>Məktəb:</strong>
           <i>{ShowSchoolCode(user["mekteb"])}</i>|
+          {<i>{user["otaq"]}</i>}<span style={{color:"green"}}>|</span>Yer:
+          <i>{user["yer"]}</i><span style={{color:"green"}}>|</span>
           
         </pre>
       </div>
