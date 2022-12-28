@@ -261,7 +261,7 @@ function App() {
   return (
     <div className="App">
     <button style={{backgroundColor:"white",marginTop:"10px"}} onClick={ShowBoy}>{numberOfBoy?numberOfBoy:"Oğlan"}</button><button style={{backgroundColor:"white" ,marginTop:"10px"}} onClick={ShowGirl}>{numberOfGirl?numberOfGirl:"Qız"}</button>
-      <h1>Tural Alışov Ürəkdi</h1>
+      <h1>XLSX də sürətli axtarış</h1>
       <div className="searchingvalue">{Buttons}</div>
 
       {onefield && (
