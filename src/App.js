@@ -1,5 +1,5 @@
 import Data from "./rfo1.json";
-import SchoolCodes from './schoolcodesxl.json'
+import SchoolCodes from './codes.json'
 import "./App.css";
 import React from "react";
 function App() {
